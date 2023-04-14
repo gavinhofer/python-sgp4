@@ -20,8 +20,8 @@ try:
     from .wrapper import Satrec, SatrecArray
     accelerated = True
 except ImportError:
-    from .model import Satrec, SatrecArray
+    from .model import Satrec, SatrecArray  # type: ignore[assignment]
     from .model import WGS72OLD, WGS72, WGS84
     accelerated = False
 else:
-    from .vallado_cpp import WGS72OLD, WGS72, WGS84
+    from .vallado_cpp import WGS72OLD, WGS72, WGS84  # type: ignore[no-redef]

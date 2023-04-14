@@ -17,7 +17,7 @@ from pkgutil import get_data
 try:
     from io import StringIO
 except ImportError:
-    from StringIO import StringIO
+    from StringIO import StringIO  # type: ignore[no-redef]
 
 import numpy as np
 
