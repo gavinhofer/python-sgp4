@@ -1,9 +1,10 @@
 from __future__ import annotations
 
-from typing import Optional, Callable
-from numpy.typing import NDArray, ArrayLike
-import numpy as np
 from datetime import datetime
+from typing import Callable, Optional
+
+import numpy as np
+from numpy.typing import ArrayLike, NDArray
 
 WGS72OLD: int
 WGS72: int
@@ -336,10 +337,9 @@ class SatrecArray:
         """
         ...
 
-
 class Satellite:
     """Satellite object.
-    
+
     Attributes
     ----------
     a (float): Semi-major axis (km).
@@ -519,7 +519,7 @@ class Satellite:
     xni: float
     zmol: float
     zmos: float
-    
+
     def propagate(
         self, year: int, mon: int, day: int, hr: int, minute: int, sec: float
     ) -> tuple[tuple[float, float, float], tuple[float, float, float]]:

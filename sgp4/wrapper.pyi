@@ -5,7 +5,6 @@ from numpy.typing import NDArray
 
 from . import vallado_cpp
 
-
 class Satrec(vallado_cpp.Satrec):
     """High-speed computation of satellite positions and velocities.
 
