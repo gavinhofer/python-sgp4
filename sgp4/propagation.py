@@ -1613,7 +1613,7 @@ def sgp4init(
 *
 *  inputs        :
 *    satrec	 - initialised structure from sgp4init() call.
-*    tsince	 - time eince epoch (minutes)
+*    tsince	 - time since epoch (minutes)
 *
 *  outputs       :
 *    r           - position vector                     km
