@@ -4,16 +4,11 @@ This is a minimally-edited copy of "sgp4io.cpp".
 
 """
 import re
-from datetime import datetime
-from math import pi, pow
 from typing import Optional, Tuple, Union, overload
 
 import sgp4.model
 import sgp4.wrapper
-from sgp4.alpha5 import from_alpha5
 from sgp4.earth_gravity import EarthGravity
-from sgp4.ext import days2mdhms, invjday, jday
-from sgp4.propagation import sgp4init
 
 _SatTypes = Union[sgp4.model.Satellite, sgp4.model.Satrec, sgp4.wrapper.Satrec]
 
